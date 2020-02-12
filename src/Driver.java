@@ -1,7 +1,7 @@
 // Driver.java
 
 public class Driver {
-    public static void main(String args[]) {
+    public static void main_old(String args[]) {
         // verify arguments
         if (args.length < 2) {
             System.out.println(
@@ -19,6 +19,20 @@ public class Driver {
 
         // run the program
         Main app = new Main(args[0], Integer.parseInt(args[1]), showResults);
+        app.run();
+
+        System.out.println(
+            (System.currentTimeMillis() - start) + " milliseconds to " +
+            "complete the program");
+    }
+    public static void main(String args[]) {
+        // verify arguments
+       
+
+        long start = System.currentTimeMillis();
+
+        // run the program
+        Main app = new Main("data/test01", 5, true);
         app.run();
 
         System.out.println(

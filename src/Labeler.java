@@ -6,7 +6,7 @@ import java.util.*;
 public class Labeler {
 
     // labelg program options
-    private static final String programName = "./labelg";
+    private static final String programName = "labelg.exe";
     private static final int invariant = 3;
     private static final int mininvarlevel = 1;
     private static final int maxinvarlevel = 100;
